@@ -1,0 +1,18 @@
+extend /_template/layout
+
+block vars
+  - title = 'webpack-test'
+  - description = 'webpack-test-description'
+  - keywords = 'webpack-test-keywords'
+  - ogUrl = 'webpack-test-url'
+  - ogImg = 'webpack-test-image'
+
+block contents
+  include /_include/header
+
+  .p-wrapper
+    .p-inner
+      h1#target Hello Webpack 2.x /test/index.pug
+      img(src='~images/diamond.png')
+
+  include /_include/footer

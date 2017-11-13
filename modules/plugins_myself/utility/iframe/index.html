@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>iframe api</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="">
+    <style>
+      body {
+        margin: 0 auto;
+        max-width: 960px;
+      }
+      .youtube-wrap {
+        margin: 0 auto;
+        width: 70%;
+      }
+      .youtube-inner {
+        position: relative;
+        padding: 0 0 56.25%;
+        margin: 0 auto;
+        height: 0;
+        overflow: hidden;
+      }
+      .youtube-wrapper > iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="youtube-wrap">
+      <div class="youtube-inner">
+        <div class="js-youtubeplayer" data-video-id="un3nZ79MXh0"></div>
+      </div>
+    </div>
+    <script src="./../../../libs/jquery/jquery-3.0.0.js"></script>
+    <script src="./yt_lp.js"></script>
+  </body>
+</html>

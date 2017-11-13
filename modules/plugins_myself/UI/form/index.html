@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>form</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="radio-wrap">
+      <div class="radio-inner">
+        <ul class="radio-list">
+          <li>
+            <input id="radio01" type="radio" name="samlpe-radio" data-event-label="one">
+            <label for="radio01">No.1</label>
+          </li>
+          <li>
+            <input id="radio02" type="radio" name="samlpe-radio" data-event-label="two">
+            <label for="radio02">No.2</label>
+          </li>
+          <li>
+            <input id="radio03" type="radio" name="samlpe-radio" data-event-label="three">
+            <label for="radio03">No.3</label>
+          </li>
+          <li>
+            <input id="radio04" type="radio" name="samlpe-radio" data-event-label="four">
+            <label for="radio04">No.4</label>
+          </li>
+          <li>
+            <input id="radio05" type="radio" name="samlpe-radio" data-event-label="five">
+            <label for="radio05">No.5</label>
+          </li>
+          <li>
+            <input id="radio06" type="radio" name="samlpe-radio" data-event-label="six">
+            <label for="radio06">No.6</label>
+          </li>
+          <li>
+            <input id="radio07" type="radio" name="samlpe-radio" data-event-label="seven">
+            <label for="radio07">No.7</label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="form-wrap">
+      <form class="form-wrap-inner" action="POST">
+        <input class="form-text" name="" type="text" value="" placeholder="subject">
+        <input class="form-text" name="" type="password" value="" placeholder="password">
+        <select class="form-select" id="" name="">
+          <option value="select01">select01</option>
+          <option value="select02">select02</option>
+          <option value="select03" selected>select03</option>
+          <option value="select04">select04</option>
+          <option value="select05">select05</option>
+        </select>
+        <textarea class="form-textarea" cols="30" id="" name="" rows="10" placeholder="You can write anything"></textarea>
+        <button action="submit">SUBMIT</button>
+      </form>
+    </section>
+    <script src="./../../../libs/jquery/jquery-3.0.0.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

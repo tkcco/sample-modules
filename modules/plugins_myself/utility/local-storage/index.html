@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>local storage</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <div class="content-wrap">
+      <div class="js-container contents">
+        <a class="js-btn" href="" data-kind="">Button</a>
+        <div class="js-links contents-inner">
+          <select name="select-item" class="js-select-item">
+            <option value="common" selected="">初期化</option>
+            <option value="item01">アイテム01</option>
+            <option value="item02">アイテム02</option>
+            <option value="item03">アイテム03</option>
+          </select>
+          <ul class="">
+            <li>
+              <a href="#01" data-link="">
+                <img alt="" src="">
+              </a>
+            </li>
+            <li>
+              <a href="#02" data-link="">
+                <img alt="" src="">
+              </a>
+            </li>
+            <li>
+              <a href="#03" data-link="">
+                <img alt="" src="">
+              </a>
+            </li>
+            <li>
+              <a href="#04" data-link="">
+                <img alt="" src="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <style media="screen">
+      .contents {
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+      }
+      .contents > a {
+        display: inline-block;;
+      }
+      .contents-inner {
+        display: none;
+      }
+      .contents-inner > ul > li {
+        background-color: #ccc;
+      }
+    </style>
+    <script src="./../../../libs/jquery/jquery-3.0.0.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

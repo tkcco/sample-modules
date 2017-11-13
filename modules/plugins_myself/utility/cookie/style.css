@@ -1,0 +1,33 @@
+.sample-cookie {
+	padding: 20px;
+	margin: 50px auto;
+	width: 840px;
+	box-sizing: border-box;
+}
+.sample-cookie-list {
+  margin: 0 auto;
+  width: 500px;
+  font-size: 0;
+}
+.sample-cookie-list > li {
+  display: inline-block;
+  width: 47%;
+  font-size: 20px;
+  text-align: center;
+}
+.sample-cookie-list > li:first-child {
+  margin-right: 3%;
+}
+.sample-cookie-list > li:last-child {
+  margin-left: 3%;
+}
+.sample-cookie-list > li > a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #000;
+}
+.sample-cookie-list > li > a:hover {
+  opacity: .8;
+}

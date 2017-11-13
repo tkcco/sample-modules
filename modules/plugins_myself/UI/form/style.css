@@ -1,0 +1,125 @@
+/* formのリセットスタイル */
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input, button, textarea, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0;
+}
+/* IEの矢印アイコンの非表示 */
+select::-ms-expand {
+  display: none;
+}
+/* Firefoxのfocus時の点線の非表示 */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+/* safariのスピンボタンの非表示 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox, IEのスピンボタンの非表示 */
+input[type="number"] {
+    -moz-appearance:textfield;
+}
+/* formのリセットスタイル   ここまで  */
+
+
+
+
+
+.radio-wrap {
+  position: relative;
+  padding: 20px;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 680px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.radio-inner {
+  border: 2px solid #c1e0fb;
+  background-color: #fff;
+}
+.radio-list {
+  padding: 2% 3% 3%;
+  margin: 0;
+  list-style: none;
+}
+.radio-list > li {
+  margin-top: 15px;
+  background-color: #eef7fd;
+}
+.radio-list > li:first-child {
+  margin-top: 0;
+}
+.radio-list > li > input {
+  display: none;
+}
+.radio-list > li > label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 38px;
+  padding: 2.3% 2% 2.3% 0;
+  border-radius: 2px;
+  font-size: 17px;
+  line-height: 1.33333333;
+}
+.radio-list > li > label:before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+}
+.radio-list > li > input:checked + label:before {
+  content: "";
+  background-color: #f070a2;
+  border-radius: 50%;
+  border: 3px solid #999;
+}
+
+
+.form-wrap {
+  margin: 0 auto;
+  width: 500px;
+}
+.form-wrap-inner input,
+.form-wrap-inner select,
+.form-wrap-inner textarea,
+.form-wrap-inner button {
+  display: block;
+  padding: 5px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.form-wrap-inner button {
+  margin: 5px auto 0;
+  width: 200px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  background: #ed84fe;
+}

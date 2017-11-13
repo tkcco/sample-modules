@@ -1,0 +1,49 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-root;
+}
+body {
+  color: #000;
+  font-size: $font-size-base;
+  font-family: $font-family;
+  font-weight: 300;
+  line-height: 1.7;
+}
+ul {
+  // list-style: dics;
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+hr {
+  display: block;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input, select {
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}

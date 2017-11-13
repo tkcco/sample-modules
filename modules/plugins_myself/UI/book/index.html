@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>animation like book</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="./../../../base_css/reset.css">
+    <link rel="stylesheet" href="./../../../base_css/base.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="book-wrapper">
+      <ul class="book-list js-book-slide">
+        <li data-index="1"><img alt="" src="./img/test01.jpg"></li>
+        <li data-index="2"><img alt="" src="./img/test02.jpg"></li>
+        <li data-index="3"><img alt="" src="./img/test03.jpg"></li>
+        <li data-index="4"><img alt="" src="./img/test01.jpg"></li>
+        <li data-index="5"><img alt="" src="./img/test02.jpg"></li>
+        <li data-index="6"><img alt="" src="./img/test03.jpg"></li>
+      </ul>
+      <div class="book-btns js-btn-slide">
+        <a class="book-btn prev" href="">⇦</a>
+        <a class="book-btn next" href="">⇨</a>
+      </div>
+    </div>
+
+    <div class="book-wrapper">
+      <ul class="book-list is-rotate js-book-rotate">
+        <li data-index="1"><img alt="" src="./img/test01.jpg"></li>
+        <li data-index="2"><img alt="" src="./img/test02.jpg"></li>
+        <li data-index="3"><img alt="" src="./img/test03.jpg"></li>
+        <li data-index="4"><img alt="" src="./img/test01.jpg"></li>
+        <li data-index="5"><img alt="" src="./img/test02.jpg"></li>
+        <li data-index="6"><img alt="" src="./img/test03.jpg"></li>
+      </ul>
+      <div class="book-btns js-btn-rotate">
+        <a class="book-btn prev" href="">⇦</a>
+        <a class="book-btn next" href="">⇨</a>
+      </div>
+    </div>
+
+    <div class="book-wrapper">
+      <ul class="list-flip js-book-flip">
+        <li>
+          <a href="">
+            <img alt="" src="./img/test01.jpg">
+            <img alt="" src="./img/test02.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img alt="" src="./img/test01.jpg">
+            <img alt="" src="./img/test02.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img alt="" src="./img/test01.jpg">
+            <img alt="" src="./img/test02.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img alt="" src="./img/test01.jpg">
+            <img alt="" src="./img/test02.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img alt="" src="./img/test01.jpg">
+            <img alt="" src="./img/test02.jpg">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img alt="" src="./img/test01.jpg">
+            <img alt="" src="./img/test02.jpg">
+          </a>
+        </li>
+      </ul>
+      <div class="book-btns is-flip js-btn-flip">
+        <a class="book-btn is-active" href="">1</a>
+        <a class="book-btn" href="">2</a>
+        <a class="book-btn" href="">3</a>
+      </div>
+    </div>
+
+    <script src="./../../../libs/jquery/jquery-3.0.0.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

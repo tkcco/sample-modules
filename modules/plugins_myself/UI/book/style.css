@@ -1,0 +1,147 @@
+.book-wrapper {
+  margin: 60px auto;
+  width: 600px;
+}
+.book-list {
+  position: relative;
+  padding-top: 56.3%;
+  overflow: hidden;
+}
+.book-list > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.book-list > li:first-child {
+  z-index: 10;
+}
+.book-list > li:nth-child(2) {
+  z-index: 9;
+}
+.book-list > li:nth-child(3) {
+  z-index: 8;
+}
+.book-list > li:nth-child(4) {
+  z-index: 7;
+}
+.book-list > li:nth-child(5) {
+  z-index: 6;
+}
+.book-list > li:nth-child(6) {
+  z-index: 5;
+}
+
+.book-list > li img {
+  width: 100%;
+}
+.book-btns {
+  position: relative;
+}
+.book-btn {
+  position: absolute;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background: #000;
+}
+.book-btn.next {
+  right: 250px;
+}
+.book-btn.prev {
+  left: 250px;
+}
+
+
+.book-list.is-rotate {
+  overflow: visible;
+}
+.book-list.is-rotate > li {
+  display: inline-block;
+  perspective: 2200px;
+  overflow: visible;
+}
+.book-list.is-rotate > li > img {
+  transition: 0.9s linear;
+  transform-origin: left top;
+}
+.book-list.is-rotate > li:first-child.is-active {
+  z-index: 11;
+}
+.book-list.is-rotate > li:nth-child(2).is-active {
+  z-index: 12;
+}
+.book-list.is-rotate > li:nth-child(3).is-active {
+  z-index: 13;
+}
+.book-list.is-rotate > li:nth-child(4).is-active {
+  z-index: 14;
+}
+.book-list.is-rotate > li:nth-child(5).is-active {
+  z-index: 15;
+}
+.book-list.is-rotate > li:nth-child(6).is-active {
+  z-index: 16;
+}
+
+.list-flip {
+  padding-top: 0;
+  font-size: 0;
+  overflow: visible;
+  position: relative;
+  perspective: 1000px;
+}
+.list-flip > li {
+  display: inline-block;
+  width: 32%;
+  margin: 2% 0 0 2%;
+  overflow: visible;
+}
+.list-flip > li:nth-child(-n+3) {
+  margin-top: 0;
+}
+.list-flip > li:nth-child(3n-2) {
+  margin-left: 0;
+}
+.list-flip > li > a {
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.list-flip > li > a > img {
+  position: relative;
+  transform: translateZ(1px) rotateY(0deg);
+  transition: 1.0s all;
+}
+.list-flip > li > a > img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateZ(0px) rotateY(-180deg);
+  transition: 1.0s all;
+  /* transition: 0.9s linear; */
+  /* transform-origin: left top; */
+}
+.list-flip > li > a:hover > img {
+  transform: translateZ(0px) rotateY( -180deg);
+}
+.list-flip > li > a:hover > img:nth-child(2) {
+  transform: translateZ(1px) rotateY( -360deg);
+}
+.book-btns.is-flip {
+  margin-top: 20px;
+}
+.book-btns.is-flip .book-btn {
+  display: inline-block;
+  position: relative;
+  top: 0;
+}
+.book-btns.is-flip .book-btn.is-active {
+  background: #00a1fe;
+}

@@ -1,0 +1,27 @@
+// ------------------------------
+// margin
+// ------------------------------
+// .u-m-[0-20]
+@for $i from 0 through 20
+  .u-m-#{$i}
+    margin: $i + 0% !important
+
+// .u-mb-[0-10], .u-mt-[0-10], .u-ml-[0-10], .u-mr-[0-10]
+@each $prefix, $pos in (mt: top, mb: bottom, ml: left, mr: right)
+  @for $i from 0 through 20
+    .u-#{$prefix}-#{$i}
+      margin-#{$pos}: $i + 0% !important
+
+// ------------------------------
+// padding
+// ------------------------------
+// .u-p-[0-20]
+@for $i from 0 through 20
+  .u-p-#{$i}
+    padding: $i + 0% !important
+
+// .u-pt-[0-20], .u-pb-[0-20], .u-pl-[0-20], .u-pr-[0-20]
+@each $prefix, $pos in (pt: top, pb: bottom, pl: left, pr: right)
+  @for $i from 0 through 20
+    .u-#{$prefix}-#{$i}
+      padding-#{$pos}: $i + 0% !important

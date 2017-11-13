@@ -1,0 +1,6 @@
+node_modules
+public
+htdocs
+_pre
+
+npm-debug.log

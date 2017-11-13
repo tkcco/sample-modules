@@ -1,0 +1,34 @@
+.slot-wrapper {
+  margin: 80px auto 0;
+  width: 1000px;
+}
+.slot-wrapper input {
+}
+.slot-warn {
+  position: relative;
+}
+.slot-warn p {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e00;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.slot-num {
+  margin-top: 100px;
+  width: 500px;
+  font-size: 0;
+}
+.slot-each {
+  display: inline-block;
+  width: 49px;
+  height: 52px;
+  border: 2px solid #ccc;
+}
+.slot-each-number {
+  display: none;
+  height: 100%;
+  background: url(./number_big.png) repeat-y;
+}
