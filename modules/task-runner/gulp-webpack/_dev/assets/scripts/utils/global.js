@@ -24,7 +24,7 @@ export default (() => {
   const loadedFunc = () => {
     document.body.classList.add('is-loaded');
     console.log('is-loaded');
-  }
+  };
 
   displayEvent.initEvent('changedisplay', true, true);
   window.addEventListener('load', loadedFunc, false);
