@@ -58,8 +58,10 @@ fi
 # end VCS
 
 #プロンプト表示
-PROMPT="%B$MAGENTA %m $DEFAULT=> %B$bWHITE$BLACK %~ $DEFAULT
-%B$GREEN (๑˃̵ᴗ˂̵) {  $DEFAULT"
+
+#PROMPT="%B$MAGENTA %n %m $DEFAULT=> %B$bYELLOW$BLACK %~ $DEFAULT
+PROMPT="%B$MAGENTA %n $DEFAULT=> %B$bYELLOW$BLACK %~ $DEFAULT
+%B$CYAN (๑˃̵ᴗ˂̵) {  $DEFAULT"
 
 #タブタイトル部分にパスの表示
 function precmd() {
