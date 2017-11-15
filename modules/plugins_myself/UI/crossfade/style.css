@@ -1,0 +1,26 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+  width: 100%;
+}
+
+.crossfade-wrapper {
+  position: relative;
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.crossfade-item {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.crossfade-item:first-child {
+  opacity: 1;
+}

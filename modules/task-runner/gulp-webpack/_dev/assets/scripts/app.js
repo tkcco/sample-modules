@@ -9,9 +9,7 @@ if (!window.$) {
 class App {
   constructor() {
     const menu = new Menu();
-    menu();
   }
 }
 
 const app = new App();
-app();
