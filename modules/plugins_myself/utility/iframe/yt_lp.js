@@ -18,26 +18,25 @@
         this.player = new YT.Player(this.$el[0], {
           videoId: this.videoId,
           playerVars: {
-              rel: 0, // 再生終了後に関連動画を表示するかどうか設定
-              enablejsapi: 1 // 自動再生するかどうか設定
+            rel: 0, // 再生終了後に関連動画を表示するかどうか設定
+            enablejsapi: 1 // 自動再生するかどうか設定
           },
-      		events: {
-      			'onStateChange': this.onStateChange.bind(this)
-      		}
+      	  events: {
+      	    'onStateChange': this.onStateChange.bind(this)
+      	  }
         });
       },
       onStateChange: function(event){
         console.log(event);
-      //   if (event.data == YT.PlayerState.PLAYING) {
-      //     // Play
-      //     dataLayer.push({
-      //       'event' : 'youtube_start',
-      //       'video_id' : this.videoId
-      //     });
-      //   }
+        //   if (event.data == YT.PlayerState.PLAYING) {
+        //     // Play
+        //     dataLayer.push({
+        //       'event' : 'youtube_start',
+        //       'video_id' : this.videoId
+        //     });
+        //   }
       }
     });
-
     return Element;
   }());
 
