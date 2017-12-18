@@ -1,17 +1,21 @@
 // ------------------------------
+// marginとpadding 1%ずつのスタイル
+// ------------------------------
+
+// ------------------------------
 // margin
 // ------------------------------
 // .u-m-[0-20]
-@for ($i from 0 through 20) {
-  .u-m-#{$i} {
+@for $i from 0 through 20 {
+  .u-m-#{$i}-percentage {
     margin: $i + 0% !important;
   }
 }
 
 // .u-mb-[0-10], .u-mt-[0-10], .u-ml-[0-10], .u-mr-[0-10]
-@each ($prefix, $pos in (mt: top, mb: bottom, ml: left, mr: right)) {
-  @for ($i from 0 through 20) {
-    .u-#{$prefix}-#{$i} {
+@each $prefix, $pos in (mt: top, mb: bottom, ml: left, mr: right) {
+  @for $i from 0 through 20 {
+    .u-#{$prefix}-#{$i}-percentage {
       margin-#{$pos}: $i + 0% !important;
     }
   }
@@ -21,17 +25,63 @@
 // padding
 // ------------------------------
 // .u-p-[0-20]
-@for ($i from 0 through 20) {
-  .u-p-#{$i} {
+@for $i from 0 through 20 {
+  .u-p-#{$i}-percentage {
     padding: $i + 0% !important;
   }
 }
 
 // .u-pt-[0-20], .u-pb-[0-20], .u-pl-[0-20], .u-pr-[0-20]
-@each ($prefix, $pos in (pt: top, pb: bottom, pl: left, pr: right)) {
-  @for ($i from 0 through 20) {
-    .u-#{$prefix}-#{$i} {
+@each $prefix, $pos in (pt: top, pb: bottom, pl: left, pr: right) {
+  @for $i from 0 through 20 {
+    .u-#{$prefix}-#{$i}-percentage {
       padding-#{$pos}: $i + 0% !important;
+    }
+  }
+}
+
+
+// ------------------------------
+// marginとpadding 5pxずつのスタイル
+// ------------------------------
+
+
+$num: 5;
+
+// ------------------------------
+// margin
+// ------------------------------
+// .u-m-[0-20]
+@for $i from 0 through 15 {
+  .u-m-#{$i * $num} {
+    margin: #{$i * $num}px !important;
+  }
+}
+
+// .u-mb-[0-10], .u-mt-[0-10], .u-ml-[0-10], .u-mr-[0-10]
+@each $prefix, $pos in (mt: top, mb: bottom, ml: left, mr: right) {
+  @for $i from 0 through 15 {
+    .u-#{$prefix}-#{$i * $num} {
+      margin-#{$pos}: #{$i * $num}px !important;
+    }
+  }
+}
+
+// ------------------------------
+// padding
+// ------------------------------
+// .u-p-[0-20]
+@for $i from 0 through 15 {
+  .u-p-#{$i * $num} {
+    padding: #{$i * $num}px !important;
+  }
+}
+
+// .u-pt-[0-20], .u-pb-[0-20], .u-pl-[0-20], .u-pr-[0-20]
+@each $prefix, $pos in (pt: top, pb: bottom, pl: left, pr: right) {
+  @for $i from 0 through 15 {
+    .u-#{$prefix}-#{$i * $num} {
+      padding-#{$pos}: #{$i * $num}px !important;
     }
   }
 }
