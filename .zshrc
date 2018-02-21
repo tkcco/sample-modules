@@ -1,7 +1,6 @@
 ###########  path of nvm  ###########
-if [[ -s ~/.nvm/nvm.sh ]];
- then source ~/.nvm/nvm.sh
-fi
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 ##########  path of rbenv  ##########
 export PATH=/usr/local/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -58,10 +57,8 @@ fi
 # end VCS
 
 #プロンプト表示
-
-#PROMPT="%B$MAGENTA %n %m $DEFAULT=> %B$bYELLOW$BLACK %~ $DEFAULT
-PROMPT="%B$MAGENTA %n $DEFAULT=> %B$bYELLOW$BLACK %~ $DEFAULT
-%B$CYAN (๑˃̵ᴗ˂̵) {  $DEFAULT"
+PROMPT="%B$MAGENTA %m $DEFAULT=> %B$bWHITE$BLACK %~ $DEFAULT
+%B$GREEN (๑˃̵ᴗ˂̵) {  $DEFAULT"
 
 #タブタイトル部分にパスの表示
 function precmd() {
@@ -323,3 +320,4 @@ esac
 function chpwd() { la }
 
 # vim:set ft=zsh:
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
