@@ -57,8 +57,8 @@ fi
 # end VCS
 
 #プロンプト表示
-PROMPT="%B$MAGENTA %m $DEFAULT=> %B$bWHITE$BLACK %~ $DEFAULT
-%B$GREEN (๑˃̵ᴗ˂̵) {  $DEFAULT"
+PROMPT="%B$MAGENTA %m $DEFAULT |||> %B$bYELLOW$BLACK %~ $DEFAULT
+%B$GREEN (~@ ˃̵ᴗ˂̵) ~~> $DEFAULT"
 
 #タブタイトル部分にパスの表示
 function precmd() {
@@ -317,7 +317,18 @@ esac
 
 #######################################
 #cdしたら自動でlsコマンド実行
+setopt auto_cd
 function chpwd() { la }
 
 # vim:set ft=zsh:
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Setup ssh-agent
+if [ -f ~/.ssh-agent ]; then
+    . ~/.ssh-agent
+fi
+if [ -z "$SSH_AGENT_PID" ] || ! kill -0 $SSH_AGENT_PID; then
+    ssh-agent > ~/.ssh-agent
+    . ~/.ssh-agent
+fi
+ssh-add -l >& /dev/null || ssh-add
