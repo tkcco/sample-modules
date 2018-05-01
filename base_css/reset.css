@@ -32,10 +32,10 @@ input, button, textarea, select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 0;
-  }
+}
+input:focus, button:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0;
 }
 select::-ms-expand {
   display: none;
