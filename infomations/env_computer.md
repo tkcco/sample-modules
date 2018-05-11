@@ -20,9 +20,11 @@
 ## プログラミング系
 - Homebrew
 - nvm
+- git
 - tig(brew経由)
 - peco(brew経由)
-- zshrc
+- zsh(brew経由)
+- .zshrc(terminalの設定ファイル)
 - .atom(atomの設定ディレクトリ)
 - .emacs.d(Emacsの設定ディレクトリ)
 
