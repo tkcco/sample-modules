@@ -3,6 +3,8 @@
   width: 1000px;
 }
 .slot-wrapper input {
+  padding: 5px 10px;
+  border: 2px solid #ccc;
 }
 .slot-warn {
   position: relative;

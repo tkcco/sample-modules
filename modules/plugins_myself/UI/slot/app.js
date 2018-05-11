@@ -42,8 +42,8 @@ var App = App || {};
           this.$slotNumber.eq(i).find('.slot-each-number').hide();
         } else {
           this.$slotNumber.eq(i).find('.slot-each-number').show().animate({
-            backgroundPositionY: '-' + (value.charAt(j) * 100) + '%'
-          }, 4000);
+            backgroundPositionY: '-' + (value.charAt(j) * 99.1) + '%'
+          }, 2000);
           j++;
         }
       }

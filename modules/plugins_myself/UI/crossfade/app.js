@@ -22,7 +22,7 @@ MYAPP.crossfade.prototype = {
 
   //  イベントハンドラの設定
   bindEvent: function() {
-    setInterval(function () { this.crossFade(); }.bind(this), 6000);
+    setInterval(function () { this.crossFade(); }.bind(this), 3000);
   },
 
   // 一枚ずつ表示

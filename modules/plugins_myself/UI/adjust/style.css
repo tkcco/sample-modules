@@ -1,15 +1,25 @@
 .adjust-wrap {
+  margin: 20px auto;
+  width: 80%;
 }
 .adjust-wrap ul {
   font-size: 0;
 }
 .adjust-wrap li {
   display: inline-block;
-  width: 20%;
+  margin-left: 5%;
+  padding: 20px;
+  width: 30%;
   border: 5px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
   vertical-align: top;
+}
+.adjust-wrap li:nth-child(3n+1) {
+  margin-left: 0;
+}
+.adjust-wrap li:nth-child(n+4) {
+  margin-top: 20px;
 }
 .adjust-wrap p {
   font-size: 16px;

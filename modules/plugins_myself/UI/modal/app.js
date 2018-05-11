@@ -23,7 +23,7 @@ Modal.prototype = {
     $(document).on('click', this.closeModal.bind(this));
   },
 
-  solideModalTemplate: '<div class="modal-wrap">' +
+  flexibleModalTemplate: '<div class="modal-wrap">' +
                   '<div class="modal-body">' +
                     '<a class="modal-close" href="">×</a>' +
                     '<p></p>' +
@@ -32,34 +32,16 @@ Modal.prototype = {
                       '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
                       '<ul class="modal-content__list">' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                      '</ul>' +
-                    '</div>' +
-                    '<div class="modal-content">' +
-                      '<h2 class="modal-content__title"></h2>' +
-                      '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
-                      '<ul class="modal-content__list">' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                       '</ul>' +
                     '</div>' +
@@ -68,34 +50,16 @@ Modal.prototype = {
                       '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
                       '<ul class="modal-content__list">' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                      '</ul>' +
-                    '</div>' +
-                    '<div class="modal-content">' +
-                      '<h2 class="modal-content__title"></h2>' +
-                      '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
-                      '<ul class="modal-content__list">' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                       '</ul>' +
                     '</div>' +
@@ -104,34 +68,16 @@ Modal.prototype = {
                       '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
                       '<ul class="modal-content__list">' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                      '</ul>' +
-                    '</div>' +
-                    '<div class="modal-content">' +
-                      '<h2 class="modal-content__title"></h2>' +
-                      '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
-                      '<ul class="modal-content__list">' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
-                        '</li>' +
-                        '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                       '</ul>' +
                     '</div>' +
@@ -140,23 +86,77 @@ Modal.prototype = {
                       '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
                       '<ul class="modal-content__list">' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                         '<li>' +
-                          '<a class="modal-content__link" href=""></a>' +
-                          '<p class="modal-content__text"></p>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                      '</ul>' +
+                    '</div>' +
+                    '<div class="modal-content">' +
+                      '<h2 class="modal-content__title"></h2>' +
+                      '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
+                      '<ul class="modal-content__list">' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                      '</ul>' +
+                    '</div>' +
+                    '<div class="modal-content">' +
+                      '<h2 class="modal-content__title"></h2>' +
+                      '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
+                      '<ul class="modal-content__list">' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                      '</ul>' +
+                    '</div>' +
+                    '<div class="modal-content">' +
+                      '<h2 class="modal-content__title"></h2>' +
+                      '<a class="modal-content__title__link js-modal-slide" href="">slide</a>' +
+                      '<ul class="modal-content__list">' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
+                        '</li>' +
+                        '<li>' +
+                          '<a class="modal-content__link" href="">リンク</a>' +
+                          '<p class="modal-content__text">テキスト</p>' +
                         '</li>' +
                       '</ul>' +
                     '</div>' +
                   '</div>' +
                 '</div>',
 
-  flexibleModalTemplate: '<div class="modal-wrap">' +
+  solidModalTemplate: '<div class="modal-wrap">' +
                            '<div class="modal-body-flexible">' +
                              '<a class="modal-close" href="">×</a>' +
                              '<div class="modal-body-wrap"></div>' +
@@ -169,10 +169,10 @@ Modal.prototype = {
     var $target = $(e.currentTarget);
     var className = $target.attr('class');
     if (className.match('01')) {
-      $('body').prepend(this.solideModalTemplate).addClass('is-modal-open');
+      $('body').prepend(this.flexibleModalTemplate).addClass('is-modal-open');
       $('.modal-wrap').css('height', 100 + '%').fadeIn(500);
     } else {
-      $('body').prepend(this.flexibleModalTemplate).addClass('is-modal-open');
+      $('body').prepend(this.solidModalTemplate).addClass('is-modal-open');
       $('.modal-wrap').css('height', 100 + '%').fadeIn(500);
       var height = $('.modal-body-flexible').outerHeight();
       $('.modal-body-flexible').height(height).css({
@@ -198,6 +198,7 @@ Modal.prototype = {
     e.preventDefault();
     var $target = $(e.target);
     var $currentTarget = $(e.currentTarget);
+    console.log($currentTarget.next());
     // var src = $target.attr('src');
     // if(src.indexOf('_open') >= 0) {
     //   $target.attr('src', $target.attr('src').replace('_open', '_close'));
