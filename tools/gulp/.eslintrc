@@ -1,0 +1,21 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "globals": {
+    "L": true,
+    "$": true
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "comma-dangle": 0
+  }
+}
